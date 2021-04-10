@@ -1,0 +1,11 @@
+{
+  "name": "404",
+  "version": "1.0.0",
+  "main": "App.j",
+  "author": "Jean Carlos Piguave Alvarado <piguavejc@gmail.com>",
+  "description": "",
+  "license": "MIT",
+  "scripts": {
+    "sass": "node-sass -w sass -o src/css"
+  }
+}
