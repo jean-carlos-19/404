@@ -5,7 +5,9 @@
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
   color: #333333;
-  --color_parrafo: #4f4f4f; }
+  --color_titulo: #333333;
+  --color_parrafo: #4f4f4f;
+  --color_pie_pagina: #bdbdbd; }
 
 *,
 *::before,
@@ -31,21 +33,22 @@ img {
 
 .contenedor {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
-  .contenedor > header + section {
-    margin-top: 0.5rem; }
+  height: 100vmax; }
+  @media screen and (min-width: 50em) {
+    .contenedor {
+      height: 100vh; } }
   .contenedor header {
     width: 100%;
-    height: 10vh;
+    height: 10%;
     padding: 0.2em 0.5em; }
     .contenedor header .encabezado h3 {
       font-size: 1.5rem; }
   .contenedor .contenido {
-    height: 80vh; }
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
     .contenedor .contenido .figura {
       width: 100%;
       display: flex;
@@ -55,7 +58,7 @@ img {
       .contenedor .contenido .figura img {
         height: 50vmin; }
     .contenedor .contenido .descripcion > div + div {
-      padding-top: 0.5rem; }
+      margin-top: 0.5rem; }
     .contenedor .contenido .descripcion .titulo,
     .contenedor .contenido .descripcion .parrafo {
       font-family: Space Mono;
@@ -63,7 +66,7 @@ img {
     .contenedor .contenido .descripcion .titulo h2 {
       font-weight: bold;
       font-size: 3rem;
-      line-height: 71px;
+      line-height: 4.4375rem;
       letter-spacing: -0.035em;
       margin-left: 0.9rem; }
     .contenedor .contenido .descripcion .parrafo p {
@@ -71,15 +74,18 @@ img {
       font-size: 1.125rem;
       line-height: 1.66625rem;
       letter-spacing: -0.035em;
-      color: ---color_parrafo;
+      color: var(---color_parrafo);
       margin-left: 0.9rem; }
     .contenedor .contenido .descripcion button {
       padding: 1em 3em;
-      background: #333333;
+      background: var(--color_titulo);
       color: white;
       text-transform: uppercase;
-      margin-left: 24px;
-      cursor: pointer; }
+      margin-left: 1.5rem;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      border-radius: 2rem; }
     @media screen and (min-width: 50em) {
       .contenedor .contenido {
         display: flex;
@@ -88,23 +94,30 @@ img {
         align-items: center; }
         .contenedor .contenido .descripcion .titulo h2 {
           font-size: 4rem;
-          line-height: 95px; }
+          line-height: 5, 9375rem; }
         .contenedor .contenido .descripcion .parrafo p {
-          font-size: 24px;
-          line-height: 36px; }
+          font-size: 1.5rem;
+          line-height: 2.25rem; }
         .contenedor .contenido .descripcion button {
-          font-size: 14px;
-          line-height: 21px; } }
+          font-size: 0.875rem;
+          line-height: 1.3125rem; } }
   .contenedor footer {
-    height: 10vh;
-    padding: 0.5em 1em;
+    height: 10%;
+    padding: 1em 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-    .contenedor footer span {
+    .contenedor footer p {
       font-family: Montserrat;
       text-align: center;
       font-size: 0.875rem;
-      color: #bdbdbd;
-      line-height: 17, 07px; }
+      color: --color_pie_pagina;
+      line-height: 1.066875rem; }
+      .contenedor footer p span {
+        font-family: inherit;
+        text-align: inherit;
+        font-size: 1rem;
+        line-height: inherit;
+        font-weight: bold;
+        color: --color_titulo; }

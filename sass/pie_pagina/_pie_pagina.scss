@@ -1,12 +1,20 @@
 footer {
-  height: 10vh;
-  padding: 0.5em 1em;
+  height: 10%;
+  padding: 1em 0;
   @include display_flex(row, center, center);
-  span {
+  p {
     font-family: Montserrat;
     text-align: center;
     font-size: 0.875rem;
-    color: #bdbdbd;
-    line-height: 17, 07px;
+    color: --color_pie_pagina;
+    line-height: 1.066875rem;
+    span {
+      font-family: inherit;
+      text-align: inherit;
+      font-size: 1rem;
+      line-height: inherit;
+      font-weight: bold;
+      color: --color_titulo;
+    }
   }
 }

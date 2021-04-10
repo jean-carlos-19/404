@@ -2,10 +2,10 @@
 @import "./funciones";
 .contenedor {
   width: 100%;
-  height: 100vh;
-  @include display_flex(column, flex-start, center);
-  & > header + section {
-    margin-top: 0.5rem;
+  height: 100vmax;
+
+  @media screen and (min-width: 50em) {
+    height: 100vh;
   }
   @import "./encabezado/encabezado";
   @import "./contenido/contenido";
