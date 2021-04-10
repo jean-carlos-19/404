@@ -1,0 +1,13 @@
+@import "./globales";
+@import "./funciones";
+.contenedor {
+  width: 100%;
+  height: 100vh;
+  @include display_flex(column, flex-start, center);
+  & > header + section {
+    margin-top: 0.5rem;
+  }
+  @import "./encabezado/encabezado";
+  @import "./contenido/contenido";
+  @import "./pie_pagina/pie_pagina";
+}

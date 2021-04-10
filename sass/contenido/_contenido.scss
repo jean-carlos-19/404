@@ -1,0 +1,70 @@
+.contenido {
+  height: 80vh;
+  .figura {
+    width: 100%;
+    @include display_flex(row, center, center);
+    img {
+      height: 50vmin;
+    }
+  }
+  .descripcion {
+    & > div + div {
+      padding-top: 0.5rem;
+    }
+    .titulo,
+    .parrafo {
+      font-family: Space Mono;
+      font-style: normal;
+    }
+    .titulo {
+      h2 {
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+        margin-left: 0.9rem;
+      }
+    }
+    .parrafo {
+      p {
+        font-weight: normal;
+        font-size: 1.125rem;
+        line-height: 1.66625rem;
+        letter-spacing: -0.035em;
+        color: ---color_parrafo;
+        margin-left: 0.9rem;
+      }
+    }
+
+    button {
+      padding: 1em 3em;
+      background: #333333;
+      color: white;
+      text-transform: uppercase;
+      margin-left: 24px;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (min-width: 50em) {
+    @include display_flex(row, center, center);
+    .descripcion {
+      .titulo {
+        h2 {
+          font-size: 4rem;
+          line-height: 95px;
+        }
+      }
+      .parrafo {
+        p {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+      button {
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
+}

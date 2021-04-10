@@ -1,0 +1,12 @@
+footer {
+  height: 10vh;
+  padding: 0.5em 1em;
+  @include display_flex(row, center, center);
+  span {
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #bdbdbd;
+    line-height: 17, 07px;
+  }
+}
