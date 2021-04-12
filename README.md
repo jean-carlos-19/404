@@ -1,12 +1,27 @@
-Lenguajes
--HTML
--CSS
+<a href=""> ver demo </a>
 
+<h1 align="center"> Page 404 not Found </h1>
+<h2> Lenguajes </h2>
+<ol>
+<li>HTML</li>
+<li>CSS</li>
+<li>
 Preprocesadores
--SASS
+<ol>
+    <li>SASS</li>
+    </ol>
+</ol>
+</li>
 
-Descripcion
+<h3> Descripcion </h3>
 
-Esta aplicación o sitio fue creada como una presentación a un desafío de DevChallenges. El reto consistía en construir una aplicación para completar las historias de usuario dadas.
+<p>
+Esta aplicación o sitio fue creada como una presentación a un desafío de <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>. El reto consistía en construir una aplicación para completar las historias de usuario dadas.
+</p>
 
-<a href="http://quixotic-poison.surge.sh/"> ver demo </a>
+<ul>
+<li><a href="http://quixotic-poison.surge.sh/"> ver demo </a></li>
+<li><a href="https://github.com/jean-carlos-19/team-page"> ver solucion en github </a></li>
+<li><a href="https://devchallenges.io/solutions/UPsPRuQsvaufnf9LJjL0"> ver solucion en Devchallenge </a></li>
+</ul>
+
