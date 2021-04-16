@@ -7,13 +7,7 @@
 @mixin relleno_global {
   padding: 0.2em 0.5em;
 }
-@mixin estilo_texto(
-  $fuente,
-  $alineamiento_texto,
-  $tamano_fuente,
-  $color,
-  $interlineado
-) {
+@mixin estilo_texto($fuente, $alineamiento_texto, $tamano_fuente, $color, $interlineado) {
   font-family: $fuente;
   text-align: $alineamiento_texto;
   font-size: $tamano_fuente;
