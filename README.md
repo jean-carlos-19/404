@@ -2,14 +2,14 @@
 <section align="center">
     <h1 align="center"> Page 404 not Found </h1>
 </section>
-<section">
+<section>
     <section>
         <h1 > Muestra del Sitio </h1>
     </section>
-    <figure align="center">
+    <section align="center">
          <img  width="300px" heigth="300px" src="./src/img/movil.png" alt="figura del sitio web en version movil">
-         <img  width="400px" heigth="400px" src="./src/img/escritorio.png" alt="figura del sitio web en version escritorio">
-    <figure>
+         <img  width="300px" heigth="300px" src="./src/img/escritorio.png" alt="figura del sitio web en version escritorio">
+    <section>
    
 </section>
 <section >
