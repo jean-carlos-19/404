@@ -1,0 +1,22 @@
+footer {
+  height: 10%;
+  padding: 1em 0;
+  text-transform: capitalize;
+  @include display_flex(row, center, center);
+  p {
+    @include estilo_texto(
+      Montserrat,
+      center,
+      0.875rem,
+      var(--color_pie_pagina),
+      1.066875rem
+    );
+
+    a {
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--color_titulo);
+    }
+  }
+}

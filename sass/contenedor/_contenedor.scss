@@ -1,0 +1,17 @@
+.contenedor {
+  width: 100%;
+  height: calc(100vh - 2rem);
+  * + * {
+    margin-top: 1rem;
+  }
+  @import "./encabezado/encabezado";
+  @import "./contenido/contenido";
+  @import "./pie_pagina/pie_pagina";
+
+  @media screen and (orientation: landscape) {
+    height: auto;
+  }
+  @media screen and (min-width: 50em) {
+    height: calc(100vh - 2em);
+  }
+}

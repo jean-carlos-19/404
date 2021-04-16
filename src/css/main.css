@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 :root {
-  padding: 0;
-  margin: 0;
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
   color: #333333;
@@ -12,8 +10,8 @@
 *,
 *::before,
 *::after {
-  padding: inherit;
-  margin: inherit;
+  padding: 0;
+  margin: 0;
   font-family: inherit;
   box-sizing: inherit;
   color: inherit; }
@@ -25,18 +23,43 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-  line-height: 28.6px;
-  font-weight: bolder; }
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.4375rem;
+  letter-spacing: -0.035em; }
+
+p {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.66625rem;
+  letter-spacing: -0.035em;
+  color: var(---color_parrafo); }
+
+a {
+  text-decoration: none; }
 
 img {
   max-width: 100%; }
 
+button {
+  padding: 1em 3em;
+  background: var(--color_titulo);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 2rem; }
+
 .contenedor {
   width: 100%;
-  height: 100vmax; }
-  @media screen and (min-width: 50em) {
-    .contenedor {
-      height: 100vh; } }
+  height: calc(100vh - 2rem); }
+  .contenedor * + * {
+    margin-top: 1rem; }
   .contenedor header {
     width: 100%;
     height: 10%;
@@ -44,7 +67,9 @@ img {
     .contenedor header .encabezado h3 {
       font-size: 1.5rem; }
   .contenedor .contenido {
+    width: 100%;
     height: 80%;
+    padding: 0.2em 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -57,35 +82,6 @@ img {
       align-items: center; }
       .contenedor .contenido .figura img {
         height: 50vmin; }
-    .contenedor .contenido .descripcion > div + div {
-      margin-top: 0.5rem; }
-    .contenedor .contenido .descripcion .titulo,
-    .contenedor .contenido .descripcion .parrafo {
-      font-family: Space Mono;
-      font-style: normal; }
-    .contenedor .contenido .descripcion .titulo h2 {
-      font-weight: bold;
-      font-size: 3rem;
-      line-height: 4.4375rem;
-      letter-spacing: -0.035em;
-      margin-left: 0.9rem; }
-    .contenedor .contenido .descripcion .parrafo p {
-      font-weight: normal;
-      font-size: 1.125rem;
-      line-height: 1.66625rem;
-      letter-spacing: -0.035em;
-      color: var(---color_parrafo);
-      margin-left: 0.9rem; }
-    .contenedor .contenido .descripcion button {
-      padding: 1em 3em;
-      background: var(--color_titulo);
-      color: white;
-      text-transform: uppercase;
-      margin-left: 1.5rem;
-      cursor: pointer;
-      outline: none;
-      border: none;
-      border-radius: 2rem; }
     @media screen and (min-width: 50em) {
       .contenedor .contenido {
         display: flex;
@@ -104,6 +100,7 @@ img {
   .contenedor footer {
     height: 10%;
     padding: 1em 0;
+    text-transform: capitalize;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -112,12 +109,16 @@ img {
       font-family: Montserrat;
       text-align: center;
       font-size: 0.875rem;
-      color: --color_pie_pagina;
-      line-height: 1.066875rem; }
-      .contenedor footer p span {
-        font-family: inherit;
-        text-align: inherit;
+      color: color;
+      line-height: 1.06688rem; }
+      .contenedor footer p a {
+        font-style: italic;
         font-size: 1rem;
-        line-height: inherit;
         font-weight: bold;
-        color: --color_titulo; }
+        color: var(--color_titulo); }
+  @media screen and (orientation: landscape) {
+    .contenedor {
+      height: auto; } }
+  @media screen and (min-width: 50em) {
+    .contenedor {
+      height: calc(100vh - 2em); } }

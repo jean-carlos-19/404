@@ -1,13 +1,3 @@
 @import "./globales";
 @import "./funciones";
-.contenedor {
-  width: 100%;
-  height: 100vmax;
-
-  @media screen and (min-width: 50em) {
-    height: 100vh;
-  }
-  @import "./encabezado/encabezado";
-  @import "./contenido/contenido";
-  @import "./pie_pagina/pie_pagina";
-}
+@import "./contenedor/contenedor";

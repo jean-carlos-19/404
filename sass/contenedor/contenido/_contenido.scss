@@ -1,0 +1,35 @@
+.contenido {
+  width: 100%;
+  height: 80%;
+  @include relleno_global;
+  @include display_flex(column, space-around, center);
+  .figura {
+    width: 100%;
+    @include display_flex(row, center, center);
+    img {
+      height: 50vmin;
+    }
+  }
+
+  @media screen and (min-width: 50em) {
+    @include display_flex(row, center, center);
+    .descripcion {
+      .titulo {
+        h2 {
+          font-size: 4rem;
+          line-height: 5, 9375rem;
+        }
+      }
+      .parrafo {
+        p {
+          font-size: 1.5rem;
+          line-height: 2.25rem;
+        }
+      }
+      button {
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+      }
+    }
+  }
+}

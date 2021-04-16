@@ -1,6 +1,11 @@
-<a href=""> ver demo </a>
+<main>
+<section align="center">
+    <h1 align="center"> Page 404 not Found </h1>
+</section>
+<section align="center">
+  
+</section>
 
-<h1 align="center"> Page 404 not Found </h1>
 <h2> Lenguajes </h2>
 <ol>
 <li>HTML</li>
@@ -24,4 +29,4 @@ Esta aplicación o sitio fue creada como una presentación a un desafío de <a h
 <li><a href="https://github.com/jean-carlos-19/team-page"> ver solucion en github </a></li>
 <li><a href="https://devchallenges.io/solutions/UPsPRuQsvaufnf9LJjL0"> ver solucion en Devchallenge </a></li>
 </ul>
-
+</main>
