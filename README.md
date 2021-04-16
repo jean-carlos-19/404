@@ -2,21 +2,24 @@
 <section align="center">
     <h1 align="center"> Page 404 not Found </h1>
 </section>
+<section align="center">
+    <img src="./img/movil.png">
+</section>
 <section >
     <section>
         <h2> Lenguajes </h2>
     </section>
     <nav>
-        <ol>
+        <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>
                 Preprocesadores
-                <ol>
+                <ul>
                     <li>SASS</li>
-                </ol>
+                </ul>
             </li>
-        </ol>
+        </ul>
     </nav>
 </section>
 <section >
