@@ -4,9 +4,13 @@
 </section>
 <section">
     <section>
-        <h1 > Diseño Movil </h1>
+        <h1 > Muestra del Sitio </h1>
     </section>
-    <img align="center" width="300px" heigth="300px" src="./src/img/movil.png" alt="figura del sitio web en version movil">
+    <figure align="center">
+         <img  width="300px" heigth="300px" src="./src/img/movil.png" alt="figura del sitio web en version movil">
+         <img  width="400px" heigth="400px" src="./src/img/escritorio.png" alt="figura del sitio web en version escritorio">
+    <figure>
+   
 </section>
 <section >
     <section>
