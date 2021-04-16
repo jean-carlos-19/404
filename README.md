@@ -3,7 +3,10 @@
     <h1 align="center"> Page 404 not Found </h1>
 </section>
 <section align="center">
-    <img src="./img/movil.png">
+    <section align="center">
+        <h1 align="center"> Diseño Movil </h1>
+    </section>
+    <img src="./src/img/movil.png" alt="figura del sitio web en version movil">
 </section>
 <section >
     <section>
