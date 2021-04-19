@@ -38,7 +38,7 @@
 <section >
     <h3> Soluciòn </h3>
     <nav>
-        <ul>
+        <ul align="center>
             <h3>
                 <a href="https://jc-404-not-found.onrender.com/">Demo</a><span> | </span>
                 <a href="https://github.com/jean-carlos-19/404">Github </a><span> | </span>
