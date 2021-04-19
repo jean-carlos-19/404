@@ -40,10 +40,10 @@
     <nav>
         <ul>
             <h3>
-                <a href="https://jc-404-not-found.onrender.com/">Ver Demo</a><span> | </span>
-                <a href="https://github.com/jean-carlos-19/404">Ver Solucion En Github </a><span> | </span>
-                <a href="https://devchallenges.io/solutions/jgfUUBEmeJBDfeRDMcZX">Ver Solucion En Devchallenge</a>
-                <a href="https://www.figma.com/proto/QeKWLNhB13zDjJzqR22TKE/404-page-challenge?node-id=1%3A56&scaling=min-zoom&page-id=0%3A1">Ver Diseños en Figma<a>
+                <a href="https://jc-404-not-found.onrender.com/">Demo</a><span> | </span>
+                <a href="https://github.com/jean-carlos-19/404">Github </a><span> | </span>
+                <a href="https://devchallenges.io/solutions/jgfUUBEmeJBDfeRDMcZX">Devchallenge</a>
+                <a href="https://www.figma.com/proto/QeKWLNhB13zDjJzqR22TKE/404-page-challenge?node-id=1%3A56&scaling=min-zoom&page-id=0%3A1">Figma<a>
             </h3>
         </ul>
     </nav>
