@@ -10,7 +10,7 @@
 </section>
 <nav>
     <ul>
-        <li><a href="https://devchallenges.io/">Descripciòn General</a></li>
+        <li><a href="https://github.com/jean-carlos-19/404/blob/master/README.md#-descripci%C3%B2n-general-">Descripciòn General</a></li>
         <li><a href="https://devchallenges.io/">Soluciòn</a></li>
         <li><a href="https://devchallenges.io/">Construido Con</a></li>
         <li><a href="https://devchallenges.io/">Caracteristicas</a></li>
