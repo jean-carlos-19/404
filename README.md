@@ -17,8 +17,6 @@
         <li><a href="https://github.com/jean-carlos-19/404/#-contacto-">Contacto</a></li>    
     </ul>
 </nav>
-
-##Descripcion_General
 <section >
     <section>
         <h2 > Descripciòn General </h2>
