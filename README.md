@@ -10,11 +10,11 @@
 </section>
 <nav>
     <ul>
-        - [Descripcion General](#Descripcion_General)
-        - [Built With](#built-with)
-        - [Features](#features)
-        - [Contact](#contact)
-        - [Acknowledgements](#acknowledgements)   
+        <li><a href="https://devchallenges.io/">Descripciòn General</a></li>
+        <li><a href="https://devchallenges.io/">Soluciòn</a></li>
+        <li><a href="https://devchallenges.io/">Construido Con</a></li>
+        <li><a href="https://devchallenges.io/">Caracteristicas</a></li>
+        <li><a href="https://devchallenges.io/">Contacto</a></li>    
     </ul>
 </nav>
 
