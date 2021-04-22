@@ -26,11 +26,5 @@
       opacity: 1;
     }
   }
-
-  @media screen and (orientation: landscape) {
-    height: auto;
-  }
-  @media screen and (min-width: 50em) {
-    height: calc(100vh - 2em);
-  }
+  @import "../escritorio/esc_main";
 }

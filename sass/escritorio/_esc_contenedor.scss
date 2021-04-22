@@ -1,0 +1,8 @@
+.contendor {
+  @media screen and (orientation: landscape) {
+    height: auto;
+  }
+  @media screen and (min-width: 50em) {
+    height: calc(100vh - 2em);
+  }
+}
