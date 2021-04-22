@@ -33,6 +33,10 @@ a {
   @include estilo_texto2(("Montserrat", monospace), normal, 500, 0.875rem, 1.06625rem, normal, none, #bdbdbd);
 }
 a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-style: italic;
   &:nth-child(1) {
     border-bottom: 1px solid #bdbdbd;
   }

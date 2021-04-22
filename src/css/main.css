@@ -58,8 +58,13 @@ a {
   text-transform: none;
   color: #bdbdbd; }
 
-a:nth-child(1) {
-  border-bottom: 1px solid #bdbdbd; }
+a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-style: italic; }
+  a:nth-child(1) {
+    border-bottom: 1px solid #bdbdbd; }
 
 img {
   max-width: 100%; }
