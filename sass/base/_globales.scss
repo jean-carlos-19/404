@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 
 :root {
   font-family: "Space Mono", monospace;
@@ -17,31 +18,24 @@
   box-sizing: inherit;
   color: inherit;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase;
-  font-family: Space Mono;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 3.4375rem;
-  letter-spacing: -0.035em;
+
+h3 {
+  @include estilo_texto2(("Inconsolata", monospace), normal, bold, 1.5rem, 1.5625rem, -0.08em, uppercase, #333333);
+}
+h1 {
+  @include estilo_texto2(("Space Mono", monospace), normal, bold, 2.2rem, 4.4375rem, -0.035rem, uppercase, #333333);
 }
 p {
-  font-family: Space Mono;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.125rem;
-  line-height: 1.66625rem;
-  letter-spacing: -0.035em;
-  color: var(---color_parrafo);
+  @include estilo_texto2(("Space Mono", monospace), normal, normal, 1rem, 1.66625rem, -0.035rem, uppercase, #333333);
+}
+span,
+a {
+  @include estilo_texto2(("Montserrat", monospace), normal, 500, 0.875rem, 1.06625rem, normal, none, #bdbdbd);
 }
 a {
-  text-decoration: none;
+  &:nth-child(1) {
+    border-bottom: 1px solid #bdbdbd;
+  }
 }
 img {
   max-width: 100%;
@@ -55,4 +49,22 @@ button {
   outline: none;
   border: none;
   border-radius: 2rem;
+}
+
+@keyframes aparceSitio {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }

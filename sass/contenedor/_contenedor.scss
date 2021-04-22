@@ -1,30 +1,17 @@
 .contenedor {
   width: 100%;
   height: calc(100vh - 2rem);
+  animation: aparceSitio 1s 0s ease-in-out;
+
   * + * {
     margin-top: 1rem;
+  }
+  #encabezado,
+  #contenido {
+    padding: 20px 24px;
   }
   @import "./encabezado/encabezado";
   @import "./contenido/contenido";
   @import "./pie_pagina/pie_pagina";
-
-  animation: aparceSitio 1s 0s ease-in-out;
-  @keyframes aparceSitio {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 0.25;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    75% {
-      opacity: 0.75;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @import "../escritorio/esc_main";
+  @include escritorio_contenedor();
 }

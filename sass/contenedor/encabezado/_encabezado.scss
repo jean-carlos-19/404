@@ -1,10 +1,4 @@
 header {
   width: 100%;
   height: 10%;
-  @include relleno_global();
-  .encabezado {
-    h3 {
-      font-size: 1.5rem;
-    }
-  }
 }

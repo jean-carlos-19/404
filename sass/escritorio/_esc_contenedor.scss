@@ -1,8 +1,21 @@
-.contendor {
-  @media screen and (orientation: landscape) {
-    height: auto;
-  }
-  @media screen and (min-width: 50em) {
-    height: calc(100vh - 2em);
+@mixin escritorio_contenedor {
+  & {
+    @media screen and (orientation: landscape) {
+      height: auto;
+    }
+    @media screen and (min-width: 50rem) {
+      height: calc(100vh - 2em);
+
+      h1 {
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 5.9375rem;
+      }
+      p {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        letter-spacing: -0.035em;
+      }
+    }
   }
 }
