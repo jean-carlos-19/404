@@ -1,0 +1,17 @@
+#contenedor {
+    width: 100%;
+    height: calc(100vh - 2rem);
+    animation: aparceSitio 1s 0s ease-in-out;
+  
+    * + * {
+      margin-top: 1rem;
+    }
+    #encabezado,
+    #contenido {
+      @include relleno_global();
+    }
+
+    @import "./contenido";
+    @include escritorio_contenedor();
+  }
+  
