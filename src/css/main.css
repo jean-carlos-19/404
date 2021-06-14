@@ -128,24 +128,34 @@ button {
       align-items: center; }
       #contenedor .contenido .figura img {
         height: 50vmin; }
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: 50rem) {
       #contenedor .contenido {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center; }
         #contenedor .contenido .figura {
-          flex-basis: 45%; }
+          flex-basis: 37.44%;
+          height: auto; }
+          #contenedor .contenido .figura img {
+            max-width: 100%;
+            height: 41.42vh; }
         #contenedor .contenido .descripcion {
-          flex-basis: 45%;
+          flex-basis: 40.69%;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: flex-start; }
-          #contenedor .contenido .descripcion .titulo h2 {
+          #contenedor .contenido .descripcion .titulo {
+            font-family: "Space Mono";
+            font-style: normal;
+            font-weight: bold;
             font-size: 4rem;
-            line-height: 5, 9375rem; }
+            line-height: 5.93rem;
+            letter-spacing: -0.035rem;
+            text-transform: none;
+            color: #4F4F4F; }
           #contenedor .contenido .descripcion .parrafo p {
             font-size: 1.5rem;
             line-height: 2.25rem; }
@@ -165,4 +175,4 @@ button {
       #contenedor p {
         font-size: 1.5rem;
         line-height: 2.25rem;
-        letter-spacing: -0.035em; } }
+        letter-spacing: -0.035rem; } }
