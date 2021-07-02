@@ -91,9 +91,17 @@ button {
   100% {
     opacity: 1; } }
 
+@keyframes vueltasEspantapajaros {
+  from {
+    transform: rotateY(6rad); }
+  to {
+    transform: rotateY(0rad); } }
+
 #encabezado {
   width: 100%;
   height: 10%; }
+  #encabezado h3 {
+    animation: aparceSitio 1s 0s ease-out; }
 
 #pie_pagina {
   height: 10%;
@@ -103,16 +111,25 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center; }
+  #pie_pagina span {
+    animation: aparceSitio 1s 0s ease-out; }
 
 #contenedor {
   width: 100%;
-  height: calc(100vh - 2rem);
-  animation: aparceSitio 1s 0s ease-in-out; }
+  height: calc(100vh - 2rem); }
   #contenedor * + * {
     margin-top: 1rem; }
   #contenedor #encabezado,
   #contenedor #contenido {
     padding: 1.25rem 1.5rem; }
+    #contenedor #encabezado h1, #contenedor #encabezado p, #contenedor #encabezado button,
+    #contenedor #contenido h1,
+    #contenedor #contenido p,
+    #contenedor #contenido button {
+      animation: aparceSitio 1s 0s ease-out; }
+    #contenedor #encabezado button,
+    #contenedor #contenido button {
+      background: linear-gradient(to left, #ff7f50, #574b90); }
   #contenedor .contenido {
     width: 100%;
     height: 80%;
@@ -127,7 +144,8 @@ button {
       justify-content: center;
       align-items: center; }
       #contenedor .contenido .figura img {
-        height: 50vmin; }
+        height: 50vmin;
+        animation: vueltasEspantapajaros  2.5s 0s ease-in-out infinite; }
     @media screen and (min-width: 50rem) {
       #contenedor .contenido {
         width: 100%;

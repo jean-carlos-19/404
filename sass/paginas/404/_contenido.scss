@@ -8,6 +8,7 @@
     @include display_flex(row, center, center);
     img {
       height: 50vmin;
+      animation: vueltasEspantapajaros  2.5s 0s ease-in-out infinite;
     }
   }
   @include escritorio_contenido();

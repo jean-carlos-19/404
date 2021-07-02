@@ -45,7 +45,7 @@ a {
 img {
   max-width: 100%;
 }
-button {
+button  {
   padding: 1rem 3rem;
   background: var(--color_titulo);
   color: white;
@@ -73,3 +73,14 @@ button {
     opacity: 1;
   }
 }
+@keyframes vueltasEspantapajaros {
+  from{
+    transform: rotateY(6rad);
+  }
+  to{
+    transform: rotateY(0rad);
+  } 
+}
+
+
+

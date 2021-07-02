@@ -1,14 +1,19 @@
 #contenedor {
     width: 100%;
     height: calc(100vh - 2rem);
-    animation: aparceSitio 1s 0s ease-in-out;
-  
+      
     * + * {
       margin-top: 1rem;
     }
     #encabezado,
     #contenido {
       @include relleno_global();
+      h1,p,button{
+        animation: aparceSitio 1s 0s ease-out;
+      }
+      button{
+        background: linear-gradient(to left, #ff7f50, #574b90)
+      }
     }
 
     @import "./contenido";

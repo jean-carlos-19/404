@@ -3,4 +3,7 @@
   text-transform: capitalize;
   padding: 0.5em 0;
   @include display_flex(row, center, center);
+  span{
+    animation: aparceSitio 1s 0s ease-out;
+  }
 }
