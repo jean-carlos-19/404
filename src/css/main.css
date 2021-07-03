@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;800&display=swap");
+:root {
+  --color_bienvenido_parrafo: #4f4f4f;
+  --color_encabezado_titulo: #333333;
+  --color_boton_naranjado: #ff7f50;
+  --color_boton_morado: #574b90;
+}
+
 :root {
   --color_titulo: var(--color_parrafo);
   --color_parrafo: #4f4f4f;
   --color_pie_pagina: #bdbdbd;
   font-family: "Space Mono", monospace;
   box-sizing: border-box;
-  color: var(--color_titulo); }
+  color: var(--color_titulo);
+}
 
 *,
 *::before,
@@ -15,182 +23,193 @@
   margin: 0;
   font-family: inherit;
   box-sizing: inherit;
-  color: inherit; }
-
-h3 {
-  font-family: "Inconsolata", monospace;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.5625rem;
-  letter-spacing: -0.08em;
-  text-transform: uppercase;
-  color: var(--color_parrafo); }
-
-h1 {
-  font-family: "Space Mono", monospace;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 2.2rem;
-  line-height: 4.4375rem;
-  letter-spacing: -0.035rem;
-  text-transform: uppercase;
-  color: var(--color_parrafo); }
-
-p {
-  font-family: "Space Mono", monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.66625rem;
-  letter-spacing: -0.035rem;
-  text-transform: uppercase;
-  color: var(--color_parrafo); }
-
-span,
-a {
-  font-family: "Montserrat", monospace;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.06625rem;
-  letter-spacing: normal;
-  text-transform: none;
-  color: var(--color_pie_pagina); }
-
-a {
-  text-decoration: none;
-  color: var(--color_parrafo);
-  font-weight: bold;
-  font-style: italic; }
-  a:nth-child(1) {
-    border-bottom: 1px solid var(--color_pie_pagina); }
-
-img {
-  max-width: 100%; }
-
-button {
-  padding: 1rem 3rem;
-  background: var(--color_titulo);
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  border-radius: 2rem; }
+  color: inherit;
+}
 
 @keyframes aparceSitio {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   25% {
-    opacity: 0.25; }
+    opacity: 0.25;
+  }
   50% {
-    opacity: 0.5; }
+    opacity: 0.5;
+  }
   75% {
-    opacity: 0.75; }
+    opacity: 0.75;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @keyframes vueltasEspantapajaros {
   from {
-    transform: rotateY(6rad); }
+    transform: rotateY(6rad);
+  }
   to {
-    transform: rotateY(0rad); } }
+    transform: rotateY(0rad);
+  }
+}
 
-#encabezado {
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.encabezado {
   width: 100%;
-  height: 10%; }
-  #encabezado h3 {
-    animation: aparceSitio 1s 0s ease-out; }
+  height: 10%;
+}
+.encabezado .encabezado_titulo {
+  padding: 1.25rem 1.5rem;
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.56rem;
+  letter-spacing: -0.08rem;
+  text-transform: uppercase;
+  color: #333333;
+  animation: aparceSitio 1s 0s ease-out;
+}
 
-#pie_pagina {
+.contenido {
+  width: 100%;
+  height: 80%;
+  margin-top: 7.18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width: 50rem) {
+  .contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.pie_pagina {
+  padding: 0.5em 0;
+  margin-top: 7.12rem;
   height: 10%;
   text-transform: capitalize;
-  padding: 0.5em 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
-  #pie_pagina span {
-    animation: aparceSitio 1s 0s ease-out; }
+  align-items: center;
+}
+.pie_pagina .pie_pagina_parrafo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd;
+  animation: aparceSitio 1s 0s ease-out;
+}
+.pie_pagina .pie_pagina_parrafo .pie_pagina_enlace {
+  font-style: italic;
+}
 
-#contenedor {
+.figura {
   width: 100%;
-  height: calc(100vh - 2rem); }
-  #contenedor * + * {
-    margin-top: 1rem; }
-  #contenedor #encabezado,
-  #contenedor #contenido {
-    padding: 1.25rem 1.5rem; }
-    #contenedor #encabezado h1, #contenedor #encabezado p, #contenedor #encabezado button,
-    #contenedor #contenido h1,
-    #contenedor #contenido p,
-    #contenedor #contenido button {
-      animation: aparceSitio 1s 0s ease-out; }
-    #contenedor #encabezado button,
-    #contenedor #contenido button {
-      background: linear-gradient(to left, #ff7f50, #574b90); }
-  #contenedor .contenido {
-    width: 100%;
-    height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.figura .figura_imagen {
+  animation: vueltasEspantapajaros 2.5s 0s ease-in-out infinite;
+}
+
+@media screen and (orientation: landscape) {
+  .figura_imagen {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .figura {
+    height: auto;
+  }
+  .figura .figura_imagen {
+    max-width: 90%;
+  }
+}
+
+.bienvenido {
+  margin-top: 4.81rem;
+}
+.bienvenido > * + * {
+  margin-top: 1.87rem;
+}
+.bienvenido .bienvenido_titulo {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 5.93rem;
+  letter-spacing: -0.035em;
+  color: var(--color_bienvenido_titulo);
+}
+.bienvenido .bienvenido_parrafo {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.12rem;
+  line-height: 1.68rem;
+  letter-spacing: -0.035em;
+  color: var(--color_bienvenido_parrafo);
+}
+.bienvenido .bienvenido_boton {
+  padding: 24px 43px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.87rem;
+  line-height: 1.31rem;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 2.06rem;
+  background-color: var(--color_encabezado_titulo);
+  background: linear-gradient(to left, var(--color_boton_naranjado), var(--color_boton_morado));
+}
+
+@media screen and (min-width: 50rem) {
+  .bienvenido {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-    #contenedor .contenido .figura {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-      #contenedor .contenido .figura img {
-        height: 50vmin;
-        animation: vueltasEspantapajaros  2.5s 0s ease-in-out infinite; }
-    @media screen and (min-width: 50rem) {
-      #contenedor .contenido {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center; }
-        #contenedor .contenido .figura {
-          flex-basis: 37.44%;
-          height: auto; }
-          #contenedor .contenido .figura img {
-            max-width: 100%;
-            height: 41.42vh; }
-        #contenedor .contenido .descripcion {
-          flex-basis: 40.69%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start; }
-          #contenedor .contenido .descripcion .titulo {
-            font-family: "Space Mono";
-            font-style: normal;
-            font-weight: bold;
-            font-size: 4rem;
-            line-height: 5.93rem;
-            letter-spacing: -0.035rem;
-            text-transform: none;
-            color: #4F4F4F; }
-          #contenedor .contenido .descripcion .parrafo p {
-            font-size: 1.5rem;
-            line-height: 2.25rem; }
-          #contenedor .contenido .descripcion button {
-            font-size: 0.875rem;
-            line-height: 1.3125rem; } }
-  @media screen and (orientation: landscape) {
-    #contenedor {
-      height: auto; } }
-  @media screen and (min-width: 50rem) {
-    #contenedor {
-      height: calc(100vh - 2em); }
-      #contenedor h1 {
-        font-weight: bold;
-        font-size: 4rem;
-        line-height: 5.9375rem; }
-      #contenedor p {
-        font-size: 1.5rem;
-        line-height: 2.25rem;
-        letter-spacing: -0.035rem; } }
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .bienvenido .bienvenido_parrafo {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .bienvenido .bienvenido_boton {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+}
+
+.pag_404 {
+  width: 100%;
+  max-width: 1366px;
+  padding: 1.25rem 1.5rem;
+  margin: 0 auto;
+}

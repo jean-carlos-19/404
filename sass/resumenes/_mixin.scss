@@ -1,0 +1,6 @@
+@mixin display_flex($direccion, $eje_principal, $eje_secundario) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: $eje_principal;
+  align-items: $eje_secundario;
+}

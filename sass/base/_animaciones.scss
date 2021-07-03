@@ -1,0 +1,25 @@
+@keyframes aparceSitio {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes vueltasEspantapajaros {
+  from {
+    transform: rotateY(6rad);
+  }
+  to {
+    transform: rotateY(0rad);
+  }
+}

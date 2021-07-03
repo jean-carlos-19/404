@@ -1,0 +1,57 @@
+.bienvenido {
+  margin-top: 4.81rem;
+
+  & > * + * {
+    margin-top: 1.87rem;
+  }
+
+  .bienvenido_titulo {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.93rem;
+    letter-spacing: -0.035em;
+    color: var(--color_bienvenido_titulo);
+  }
+  .bienvenido_parrafo {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.12rem;
+    line-height: 1.68rem;
+    letter-spacing: -0.035em;
+    color: var(--color_bienvenido_parrafo);
+  }
+  .bienvenido_boton {
+    padding: 24px 43px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.87rem;
+    line-height: 1.31rem;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 2.06rem;
+    background-color: var(--color_encabezado_titulo);
+    background: linear-gradient(to left, var(--color_boton_naranjado), var(--color_boton_morado));
+  }
+}
+
+// ESCRITORIO
+@media screen and (min-width: 50rem) {
+  .bienvenido {
+    @include display_flex(column, center, flex-start);
+
+    .bienvenido_parrafo {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+    .bienvenido_boton {
+      font-size: 0.875rem;
+      line-height: 1.3125rem;
+    }
+  }
+}

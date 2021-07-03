@@ -1,0 +1,17 @@
+:root {
+  --color_titulo: var(--color_parrafo);
+  --color_parrafo: #4f4f4f;
+  --color_pie_pagina: #bdbdbd;
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  color: var(--color_titulo);
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: inherit;
+  color: inherit;
+}

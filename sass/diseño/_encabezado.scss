@@ -1,0 +1,16 @@
+.encabezado {
+  width: 100%;
+  height: 10%;
+  .encabezado_titulo {
+    padding: 1.25rem 1.5rem;
+    font-family: "Inconsolata";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.56rem;
+    letter-spacing: -0.08rem;
+    text-transform: uppercase;
+    color: #333333;
+    animation: aparceSitio 1s 0s ease-out;
+  }
+}

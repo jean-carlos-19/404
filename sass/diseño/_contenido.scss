@@ -1,0 +1,14 @@
+.contenido {
+  width: 100%;
+  height: 80%;
+  margin-top: 7.18rem;
+  @include display_flex(column, space-around, center);
+}
+
+// ESCRITORIO
+@media screen and (min-width: 50rem) {
+  .contenido {
+    width: 100%;
+    @include display_flex(row, space-around, center);
+  }
+}

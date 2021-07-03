@@ -1,0 +1,22 @@
+.figura {
+  width: 100%;
+  @include display_flex(row, center, center);
+  .figura_imagen {
+    animation: vueltasEspantapajaros 2.5s 0s ease-in-out infinite;
+  }
+}
+// MOVIL HORIZONTAÑ
+@media screen and(orientation: landscape) {
+  .figura_imagen {
+    max-width: 50%;
+  }
+}
+// ESCRITORIO
+@media screen and (min-width: 50rem) {
+  .figura {
+    height: auto;
+    .figura_imagen {
+      max-width: 90%;
+    }
+  }
+}
