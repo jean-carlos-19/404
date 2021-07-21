@@ -35,8 +35,16 @@
     color: #ffffff;
     border: none;
     border-radius: 2.06rem;
-    background-color: var(--color_encabezado_titulo);
     background: linear-gradient(to left, var(--color_boton_naranjado), var(--color_boton_morado));
+    cursor: pointer;
+    transition: box-shadow .2.5s linear 0s;
+    &:focus{
+      //outline: none;
+      
+    }
+    &:active{
+      box-shadow: 0px 0px 16px #636e72;
+    }
   }
 }
 

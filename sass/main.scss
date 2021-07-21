@@ -1,7 +1,13 @@
 @import "resumenes/variables", "resumenes/funciones", "resumenes/mixin";
+
 //@import "proveedores/";
+
 @import "base/normalizar", "base/tipografia", "base/animaciones", "base/base";
+
 @import "diseño/encabezado", "diseño/contenido", "diseño/pie_pagina";
+
 @import "componentes/figura", "componentes/bienvenido";
+
 @import "paginas/404";
+
 //@import "temas/";
