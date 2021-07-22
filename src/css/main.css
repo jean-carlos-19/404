@@ -3,6 +3,8 @@
 :root {
   --color_primario: #333333;
   --color_primario_claro: #4f4f4f;
+  --color_secundario_gris: #bdbdbd;
+  --color_secundario_enlace: #0984e3;
 }
 
 :root {
@@ -110,19 +112,17 @@ img {
 }
 .pie_pagina .pie_pagina_parrafo {
   font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #bdbdbd;
+  font-size: 0.87rem;
+  line-height: 1.06rem;
+  color: var(--color_secundario_gris);
 }
 .pie_pagina .pie_pagina_parrafo .pie_pagina_enlace {
   font-style: italic;
 }
 .pie_pagina .pie_pagina_parrafo .pie_pagina_enlace:focus {
   outline: none;
-  text-shadow: 0px 0px 0px black;
+  text-shadow: 0px 0px 0px var(--color_primario);
   color: #0984e3;
 }
 

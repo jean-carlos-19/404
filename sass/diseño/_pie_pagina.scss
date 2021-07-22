@@ -6,17 +6,15 @@
   @include display_flex(row, center, center);
   .pie_pagina_parrafo {
     font-family: Montserrat;
-    font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #bdbdbd;
+    font-size: 0.87rem;
+    line-height: 1.06rem;
+    color: var(--color_secundario_gris);
     .pie_pagina_enlace {
       font-style: italic;
       &:focus {
         outline: none;
-        text-shadow: 0px 0px 0px black;
+        text-shadow: 0px 0px 0px var(--color_primario);
         color: #0984e3;
       }
     }
