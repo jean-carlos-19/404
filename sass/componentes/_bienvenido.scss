@@ -12,7 +12,7 @@
     font-size: 4rem;
     line-height: 5.93rem;
     letter-spacing: -0.035em;
-    color: var(--color_bienvenido_titulo);
+    color: var(--color_primario);
   }
   .bienvenido_parrafo {
     font-family: "Space Mono";
@@ -21,7 +21,7 @@
     font-size: 1.12rem;
     line-height: 1.68rem;
     letter-spacing: -0.035em;
-    color: var(--color_bienvenido_parrafo);
+    color: var(--color_primario_claro);
   }
   .bienvenido_boton {
     padding: 24px 43px;
@@ -33,9 +33,9 @@
     letter-spacing: -0.035em;
     text-transform: uppercase;
     color: #ffffff;
+    background-color: var(--color_primario);
     border: none;
-    border-radius: 2.06rem;
-    background: linear-gradient(to left, var(--color_boton_naranjado), var(--color_boton_morado));
+    border-radius: .5rem;
     cursor: pointer;
     transition: box-shadow .2.5s linear 0s;
     &:focus{
