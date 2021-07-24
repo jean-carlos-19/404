@@ -1,16 +1,2 @@
-.parrafo {
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.12rem;
-  line-height: 1.68rem;
-  letter-spacing: -0.035em;
-  color: var(--color_primario_claro);
-}
+
 // ESCRITORIO
-@media screen and (min-width: 50rem) {
-  .parrafo {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-}
