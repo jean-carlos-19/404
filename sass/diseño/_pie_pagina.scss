@@ -7,7 +7,7 @@
   .pie_pagina_parrafo {
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 0.87rem;
+    font-size: var(--tamano_normal);
     line-height: 1.06rem;
     color: var(--color_secundario_gris);
     .pie_pagina_enlace {
