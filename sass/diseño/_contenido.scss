@@ -6,9 +6,12 @@
 }
 
 // ESCRITORIO
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 64rem) {
   .contenido {
     width: 100%;
-    @include display_flex(row, space-around, center);
+    @include display_flex(row, center, center);
+    &>*+*{
+      margin-left: 8.24%; /* (118.78/1440)*100 */
+    }
   }
 }

@@ -5,6 +5,8 @@
   --color_primario_claro: #4f4f4f;
   --color_secundario_gris: #bdbdbd;
   --color_secundario_enlace: #0984e3;
+  --color_secundario_blanco:#ffffff;
+  --color_secundario_oscuro:#636e72;
   --tamano_titulo:4rem;
   --tamano_titulo_2:1.5rem;
   --tamano_parrafo:1.12rem;
@@ -23,6 +25,9 @@
   font-family: inherit;
   box-sizing: inherit;
   color: inherit; }
+
+body {
+  background: var(--color_secundario_blanco); }
 
 @keyframes aparceSitio {
   0% {
@@ -74,8 +79,7 @@ img {
     line-height: 2.25rem; } }
 
 .encabezado {
-  width: 100%;
-  height: 10%; }
+  width: 100%; }
   .encabezado .encabezado_titulo {
     padding: 1.25rem 1.5rem;
     font-family: "Inconsolata";
@@ -96,13 +100,16 @@ img {
   justify-content: space-around;
   align-items: center; }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 64rem) {
   .contenido {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center; } }
+    justify-content: center;
+    align-items: center; }
+    .contenido > * + * {
+      margin-left: 8.24%;
+      /* (118.78/1440)*100 */ } }
 
 .pie_pagina {
   padding: 0.5em 0;
@@ -121,10 +128,6 @@ img {
     color: var(--color_secundario_gris); }
     .pie_pagina .pie_pagina_parrafo .pie_pagina_enlace {
       font-style: italic; }
-      .pie_pagina .pie_pagina_parrafo .pie_pagina_enlace:focus {
-        outline: none;
-        text-shadow: 0px 0px 0px var(--color_primario);
-        color: #0984e3; }
 
 .boton {
   padding: 1.5rem 2.68rem;
@@ -142,7 +145,7 @@ img {
   cursor: pointer;
   transition: box-shadow 0.2 0.5s linear 0s; }
   .boton:active {
-    box-shadow: 0px 0px 16px #636e72; }
+    box-shadow: 0px 0px 16px var(--color_secundario_oscuro); }
 
 .figura {
   width: 100%;
@@ -153,27 +156,28 @@ img {
   .figura .figura_imagen {
     animation: vueltasEspantapajaros 8.5s 0s linear infinite; }
 
-@media screen and (orientation: landscape) {
-  .figura_imagen {
-    max-width: 50%; } }
-
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 64rem) {
   .figura {
-    height: auto; }
-    .figura .figura_imagen {
-      max-width: 90%; } }
+    flex-basis: 37.44%;
+    /* (539.22/1440)*100 */
+    height: auto; } }
 
 .bienvenido {
   margin-top: 4.81rem; }
   .bienvenido > * + * {
     margin-top: 1.87rem; }
 
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 64rem) {
   .bienvenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; } }
+    margin-top: 0;
+    flex-basis: 40.69%;
+    /* (586/1440)*100 */ }
+    .bienvenido .bienvenido_parrafo {
+      width: 65.01%;
+      /* 381/586 */ }
+    .bienvenido .bienvenido_boton {
+      width: 36.86%;
+      /* 216/586 */ } }
 
 .pag_404 {
   width: 100%;

@@ -7,8 +7,15 @@
 }
 
 // ESCRITORIO
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 64rem) {
   .bienvenido {
-    @include display_flex(column, center, flex-start);
+    margin-top: 0;
+    flex-basis: 40.69%;/* (586/1440)*100 */
+    .bienvenido_parrafo{
+      width: 65.01%; /* 381/586 */
+    }
+    .bienvenido_boton{
+      width: 36.86%; /* 216/586 */
+    }
   }
 }
