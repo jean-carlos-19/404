@@ -10,7 +10,7 @@
   .contenido {
     width: 100%;
     @include display_flex(row, center, center);
-    &>*+*{
+    & > * + * {
       margin-left: 8.24%; /* (118.78/1440)*100 */
     }
   }

@@ -1,25 +1,30 @@
 .titulo {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--tamano_titulo);
-    line-height: 5.93rem;
-    letter-spacing: -0.035em;
-    color: var(--color_primario);
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--tamano_titulo);
+  line-height: 5.93rem;
+  letter-spacing: -0.035em;
+  color: var(--color_primario);
+}
+.parrafo {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--tamano_parrafo);
+  line-height: 1.68rem;
+  letter-spacing: -0.035em;
+  color: var(--color_primario_claro);
+}
+.enlace{
+  font-weight: bold; 
+  &:active {
+    box-shadow: 0px 0px 16px var(--color_secundario_oscuro);
   }
+}
+@media screen and (min-width: 50rem) {
   .parrafo {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: normal;
-    font-size: var(--tamano_parrafo);
-    line-height: 1.68rem;
-    letter-spacing: -0.035em;
-    color: var(--color_primario_claro);
+    font-size: 1.5rem;
+    line-height: 2.25rem;
   }
-  @media screen and (min-width: 50rem) {
-    .parrafo {
-      font-size: 1.5rem;
-      line-height: 2.25rem;
-    }
-  }
-  
+}

@@ -1,17 +1,16 @@
 .pie_pagina {
   padding: 0.5em 0;
   margin-top: 7.12rem;
-  height: 10%;
-  text-transform: capitalize;
-  @include display_flex(row, center, center);
   .pie_pagina_parrafo {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: var(--tamano_normal);
     line-height: 1.06rem;
     color: var(--color_secundario_gris);
+    text-align: center;
     .pie_pagina_enlace {
-      font-style: italic;
+      color: inherit;
     }
   }
+  
 }
