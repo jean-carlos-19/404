@@ -17,9 +17,9 @@
 }
 @keyframes vueltasEspantapajaros {
   from {
-    transform: rotateY(6rad);
+    transform: scale(0.96);
   }
   to {
-    transform: rotateY(0rad);
+    transform: scale(1);
   }
 }

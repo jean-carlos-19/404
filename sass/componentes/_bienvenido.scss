@@ -1,6 +1,6 @@
 .bienvenido {
   margin-top: 4.81rem;
-
+  overflow-x: scroll;
   & > * + * {
     margin-top: 1.87rem;
   }
@@ -11,10 +11,10 @@
   .bienvenido {
     margin-top: 0;
     flex-basis: 40.69%; /* (586/1440)*100 */
-    .bienvenido_parrafo {
+    .parrafo_bienvenido {
       width: 65.01%; /* 381/586 */
     }
-    .bienvenido_boton {
+    .boton_bienvenido {
       width: 36.86%; /* 216/586 */
     }
   }

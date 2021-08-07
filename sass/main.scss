@@ -1,14 +1,15 @@
+@charset "utf-8";
+
 @import "resumenes/variables", "resumenes/funciones", "resumenes/mixin";
 
 //@import "proveedores/";
 
 @import "base/normalizar", "base/fuentes", "base/animaciones", "base/base", "base/ayudantes";
 
-@import "diseño/encabezado", "diseño/contenido", "diseño/pie_pagina";
+@import "diseño/cabecera", "diseño/tarjeta", "diseño/pie_pagina";
 
 @import "componentes/boton", "componentes/figura", "componentes/bienvenido";
 
 @import "paginas/404";
 
 //@import "temas/";
-
