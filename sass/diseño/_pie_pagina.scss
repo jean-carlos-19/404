@@ -1,15 +1,19 @@
 .pie_pagina {
-  padding: 0.5em 0;
-  margin-top: 7.12rem;
-  .parrafo_pie_pagina {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: var(--tamano_normal);
-    line-height: 1.06rem;
-    color: var(--color_secundario_gris);
+  margin-top: 12.01vh; /* (114/949) * 100*/
+  .normal_pie_pagina {
+    font-weight: normal;
     text-align: center;
+    text-transform: none;
+    color: var(--color_secundario_gris);
     .enlace_pie_pagina {
+      font-weight: bold;
+      text-transform: inherit;
       color: inherit;
     }
+  }
+}
+@media screen and(min-width:60rem) {
+  .pie_pagina {
+    margin-top: 28.51vh; /* (308/1080) *100*/
   }
 }

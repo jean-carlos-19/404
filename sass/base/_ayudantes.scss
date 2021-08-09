@@ -2,29 +2,97 @@
   font-family: "Space Mono";
   font-style: normal;
   font-weight: bold;
-  font-size: var(--tamano_titulo);
-  line-height: 5.93rem;
+  font-size: var(--tamano_titulo_movil);
+  line-height: 4.43rem; /*71/16*/
   letter-spacing: -0.035em;
   color: var(--color_primario);
+  @media screen and(min-width:37.5rem) {
+    & {
+      font-size: 4rem;
+      line-height: 5.93rem; /*95/16*/
+    }
+  }
+}
+.titulo_2 {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--tamano_titulo_2_movil);
+  line-height: 1.56rem; /*25/16*/
+  letter-spacing: -0.08rem;
+  text-transform: uppercase;
+  color: var(--color_primario);
+  @media screen and(min-width:37.5rem) {
+    & {
+      //font-size: 1.5rem;
+      //line-height: 2.25rem;
+    }
+  }
 }
 .parrafo {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: normal;
-  font-size: var(--tamano_parrafo);
-  line-height: 1.68rem;
+  font-size: var(--tamano_parrafo_movil);
+  line-height: 1.68rem; /*27/16*/
   letter-spacing: -0.035em;
   color: var(--color_primario_claro);
-}
-.enlace {
-  font-weight: bold;
-  &:active {
-    box-shadow: 0px 0px 16px var(--color_secundario_oscuro);
+
+  @media screen and(min-width:37.5rem) {
+    & {
+      font-size: 1.5rem;
+      line-height: 2.25rem; /*36/16*/
+    }
   }
 }
-@media screen and (min-width: 50rem) {
-  .parrafo {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
+.normal {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--tamano_normal_movil);
+  line-height: 1.31rem; /* 21/16 */
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: var(--color_secundario_blanco);
+  @media screen and(min-width:37.5rem) {
+    & {
+      //font-size: 1.5rem;
+      //line-height: 2.25rem;
+    }
+  }
+}
+.enlace {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--tamano_normal_movil);
+  line-height: 1.06rem; /*17/16*/
+  text-align: center;
+  color: var(--color_secundario_gris);
+
+  @media screen and(min-width:37.5rem) {
+    & {
+      //font-size: 1.5rem;
+      //line-height: 2.25rem;
+    }
+  }
+}
+.boton {
+  padding: 6.4% 11.46%; /* (24/375)*100 , (43/375)*100 */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--tamano_normal);
+  line-height: 1.31rem;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: var(--color_secundario_blanco);
+  background-color: var(--color_primario);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.2.5s linear 0s;
+  &:active {
+    box-shadow: 0px 0px 16px var(--color_secundario_oscuro);
   }
 }

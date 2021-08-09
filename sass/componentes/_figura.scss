@@ -1,9 +1,8 @@
 .figura {
-  width: 100%;
-  height: 41.42vmax;
+  width: 30.22vmax; /* (286.838/949)*100 */
   @include display_flex(row, center, center);
   .imagen_figura {
-    animation: vueltasEspantapajaros 1s 0s ease-in infinite alternate;
+    animation: vueltas_espantapajaros 1s 0s ease-in infinite alternate;
   }
 }
 

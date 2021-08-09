@@ -1,13 +1,13 @@
 .tarjeta {
   width: 100%;
-  height: 80%;
-  margin-top: 7.18rem;
+  margin-top: 6.74vh; /* (64/949)*100*/
   @include display_flex(column, space-around, center);
 }
 
 // ESCRITORIO
 @media screen and (min-width: 64rem) {
   .tarjeta {
+    margin-top: 12.5rem; /*200/16*/
     width: 100%;
     @include display_flex(row, center, center);
     & > * + * {

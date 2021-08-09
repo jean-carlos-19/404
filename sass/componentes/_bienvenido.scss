@@ -1,21 +1,19 @@
 .bienvenido {
-  margin-top: 4.81rem;
+  margin-top: 8.1vh; /* (76.96/949)*100 */
   overflow-x: auto;
   & > * + * {
-    margin-top: 1.87rem;
+    margin-top: 2.94vh; /* (27.96/949)*100 */
   }
 }
 
 // ESCRITORIO
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 60rem) {
   .bienvenido {
     margin-top: 0;
     flex-basis: 40.69%; /* (586/1440)*100 */
+
     .parrafo_bienvenido {
       width: 65.01%; /* 381/586 */
-    }
-    .boton_bienvenido {
-      width: 36.86%; /* 216/586 */
     }
   }
 }
