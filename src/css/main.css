@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 :root {
+  /*
+  movil:(x=375,y=949)
+  escritorio:(x=1440,y=1080)
+  */
   --color_primario: #333333;
   --color_primario_claro: #4f4f4f;
   --color_secundario_gris: #bdbdbd;
@@ -20,8 +24,26 @@
   /*64/16*/
   --taamano_parrafo_escritorio: 1.5rem;
   /*24/16*/
+  --interlineado_titulo_movil: 4.43rem;
+  /*71/16*/
+  --interlineado_titulo_2_movil: 1.56rem;
+  /*25/16*/
+  --interlineado_parrafo_movil: 1.68rem;
+  /*27/16*/
+  --interlineado_normal_movil: 1.31rem;
+  /* 21/16 */
+  --interlineado_enlace_movil: 1.06rem;
+  /*17/16*/
+  --interlineado_boton_movil: 1.31rem;
+  /*21/16*/
+  --interlineado_titulo_escritorio: 5.93rem;
+  /*95/16*/
+  --interlineado_parrafo_escritorio: 2.25rem;
+  /*36/16*/
   --relleno_404: 1.25rem 1.5rem;
+  /* 20/16 , 24/16 */
   --ancho_maximo_404: 90rem;
+  /*1440/16*/
 }
 
 :root {
@@ -90,16 +112,14 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: var(--tamano_titulo_movil);
-  line-height: 4.43rem;
-  /*71/16*/
+  line-height: var(--interlineado_titulo_movil);
   letter-spacing: -0.035em;
   color: var(--color_primario);
 }
 @media screen and (min-width: 37.5rem) {
   .titulo {
-    font-size: 4rem;
-    line-height: 5.93rem;
-    /*95/16*/
+    font-size: var(--tamano_titulo_escritorio);
+    line-height: var(--interlineado_titulo_escritorio);
   }
 }
 
@@ -108,8 +128,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: var(--tamano_titulo_2_movil);
-  line-height: 1.56rem;
-  /*25/16*/
+  line-height: var(--interlineado_titulo_2_movil);
   letter-spacing: -0.08rem;
   text-transform: uppercase;
   color: var(--color_primario);
@@ -120,16 +139,14 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: var(--tamano_parrafo_movil);
-  line-height: 1.68rem;
-  /*27/16*/
+  line-height: var(--interlineado_parrafo_movil);
   letter-spacing: -0.035em;
   color: var(--color_primario_claro);
 }
 @media screen and (min-width: 37.5rem) {
   .parrafo {
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-    /*36/16*/
+    font-size: var(--taamano_parrafo_escritorio);
+    line-height: var(--interlineado_parrafo_escritorio);
   }
 }
 
@@ -138,8 +155,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: var(--tamano_normal_movil);
-  line-height: 1.31rem;
-  /* 21/16 */
+  line-height: var(--interlineado_normal_movil);
   letter-spacing: -0.035em;
   text-transform: uppercase;
   color: var(--color_secundario_blanco);
@@ -150,20 +166,19 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: var(--tamano_normal_movil);
-  line-height: 1.06rem;
-  /*17/16*/
+  line-height: var(--interlineado_enlace_movil);
   text-align: center;
   color: var(--color_secundario_gris);
 }
 
 .boton {
-  padding: 6.4% 11.46%;
-  /* (24/375)*100 , (43/375)*100 */
+  padding: 1.43rem 2.68rem;
+  /* 23/16 , 43/16 */
   font-family: "Space Mono";
   font-style: normal;
   font-weight: bold;
   font-size: var(--tamano_normal);
-  line-height: 1.31rem;
+  line-height: var(--interlineado_boton_movil);
   letter-spacing: -0.035em;
   text-transform: uppercase;
   color: var(--color_secundario_blanco);
@@ -178,7 +193,6 @@ img {
 }
 
 .cabecera {
-  padding: 1.25rem 1.5rem;
   width: 100%;
 }
 
@@ -192,7 +206,7 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 60rem) {
   .tarjeta {
     margin-top: 12.5rem;
     /*200/16*/
@@ -243,7 +257,7 @@ img {
   animation: vueltas_espantapajaros 1s 0s ease-in infinite alternate;
 }
 
-@media screen and (min-width: 64rem) {
+@media screen and (min-width: 60rem) {
   .figura {
     flex-basis: 37.44%;
     /* (539.22/1440)*100 */
@@ -252,13 +266,13 @@ img {
 }
 
 .bienvenido {
-  margin-top: 8.1vh;
-  /* (76.96/949)*100 */
+  margin-top: 4.84rem;
+  /* 77.5/16 */
   overflow-x: auto;
 }
 .bienvenido > * + * {
-  margin-top: 2.94vh;
-  /* (27.96/949)*100 */
+  margin-top: 1.87rem;
+  /* 30/16 */
 }
 
 @media screen and (min-width: 60rem) {

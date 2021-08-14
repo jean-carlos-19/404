@@ -1,8 +1,8 @@
 .bienvenido {
-  margin-top: 8.1vh; /* (76.96/949)*100 */
+  margin-top: 4.84rem; /* 77.5/16 */
   overflow-x: auto;
   & > * + * {
-    margin-top: 2.94vh; /* (27.96/949)*100 */
+    margin-top: 1.87rem; /* 30/16 */
   }
 }
 

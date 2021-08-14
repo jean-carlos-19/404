@@ -1,4 +1,8 @@
 :root {
+  /*
+  movil:(x=375,y=949)
+  escritorio:(x=1440,y=1080)
+  */
   //colores
   --color_primario: #333333;
   --color_primario_claro: #4f4f4f;
@@ -16,9 +20,20 @@
   --tamano_titulo_escritorio: 4rem; /*64/16*/
   --taamano_parrafo_escritorio: 1.5rem; /*24/16*/
 
+  //interlineados
+  --interlineado_titulo_movil: 4.43rem; /*71/16*/
+  --interlineado_titulo_2_movil: 1.56rem; /*25/16*/
+  --interlineado_parrafo_movil: 1.68rem; /*27/16*/
+  --interlineado_normal_movil: 1.31rem; /* 21/16 */
+  --interlineado_enlace_movil: 1.06rem; /*17/16*/
+  --interlineado_boton_movil: 1.31rem; /*21/16*/
+
+  --interlineado_titulo_escritorio: 5.93rem; /*95/16*/
+  --interlineado_parrafo_escritorio: 2.25rem; /*36/16*/
+
   //rellenos
-  --relleno_404: 1.25rem 1.5rem;
+  --relleno_404: 1.25rem 1.5rem; /* 20/16 , 24/16 */
 
   //anchos
-  --ancho_maximo_404: 90rem;
+  --ancho_maximo_404: 90rem; /*1440/16*/
 }
