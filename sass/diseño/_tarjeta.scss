@@ -1,6 +1,6 @@
 .tarjeta {
   width: 100%;
-  margin-top: 6.74vh; /* (64/949)*100*/
+  margin-top: 4rem; /* (64/16) */
   @include display_flex(column, space-around, center);
 }
 
