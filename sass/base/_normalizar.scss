@@ -1,4 +1,19 @@
 :root {
+  /*
+  movil:(x=375,y=949)
+  escritorio:(x=1440,y=1080)
+  */
+
+  @include colores();
+  @include titulo();
+  @include titulo_2();
+  @include parrafo();
+  @include normal();
+  @include enlace();
+  @include boton();
+  @include relleno();
+  @include anchos();
+
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   color: var(--color_primario);

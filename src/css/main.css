@@ -1,64 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-:root {
-  /*
-  movil:(x=375,y=949)
-  escritorio:(x=1440,y=1080)
-  */
-  --color_primario: #333333;
-  --color_primario_claro: #4f4f4f;
-  --color_secundario_gris: #bdbdbd;
-  --color_secundario_enlace: #0984e3;
-  --color_secundario_blanco: #ffffff;
-  --color_secundario_oscuro: #636e72;
-  --tamano_titulo_movil: 3rem;
-  /*48/16*/
-  --tamano_titulo_2_movil: 1.5rem;
-  /*24/16*/
-  --tamano_parrafo_movil: 1.12rem;
-  /*18/16*/
-  --tamano_normal_movil: 0.87rem;
-  /* 14/16 */
-  --tamano_titulo_escritorio: 4rem;
-  /*64/16*/
-  --taamano_parrafo_escritorio: 1.5rem;
-  /*24/16*/
-  --interlineado_titulo_movil: 4.43rem;
-  /*71/16*/
-  --interlineado_titulo_2_movil: 1.56rem;
-  /*25/16*/
-  --interlineado_parrafo_movil: 1.68rem;
-  /*27/16*/
-  --interlineado_normal_movil: 1.31rem;
-  /* 21/16 */
-  --interlineado_enlace_movil: 1.06rem;
-  /*17/16*/
-  --interlineado_boton_movil: 1.31rem;
-  /*21/16*/
-  --interlineado_titulo_escritorio: 5.93rem;
-  /*95/16*/
-  --interlineado_parrafo_escritorio: 2.25rem;
-  /*36/16*/
-  --relleno_404: 1.25rem 1.5rem;
-  /* 20/16 , 24/16 */
-  --ancho_maximo_404: 90rem;
-  /*1440/16*/ }
-
-:root {
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
-  color: var(--color_primario); }
-
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  font-family: inherit;
-  box-sizing: inherit;
-  color: inherit; }
-
 @keyframes aparce_sitio {
   0% {
     opacity: 0; }
@@ -77,8 +19,71 @@
   to {
     transform: scale(1); } }
 
+:root {
+  /*
+  movil:(x=375,y=949)
+  escritorio:(x=1440,y=1080)
+  */
+  --color_primario: #333333;
+  --color_primario_claro: #4f4f4f;
+  --color_secundario_gris: #bdbdbd;
+  --color_secundario_enlace: #0984e3;
+  --color_secundario_blanco: #ffffff;
+  --color_secundario_oscuro: #636e72;
+  --tamano_titulo: 3rem;
+  /*48/16*/
+  --interlineado_titulo: 4.43rem;
+  /*71/16*/
+  --tamano_titulo_2: 1.5rem;
+  /*24/16*/
+  --interlineado_titulo_2: 1.56rem;
+  /*25/16*/
+  --tamano_parrafo: 1.12rem;
+  /*18/16*/
+  --interlineado_parrafo: 1.68rem;
+  /*27/16*/
+  --tamano_normal: 0.87rem;
+  /* 14/16 */
+  --interlineado_normal: 1.31rem;
+  /* 21/16 */
+  --interlineado_enlace: 1.06rem;
+  /*17/16*/
+  --tamano_normal: 0.87rem;
+  /* 14/16 */
+  --interlineado_boton: 1.31rem;
+  /*21/16*/
+  --relleno_404: 1.25rem 1.5rem;
+  /* 20/16 , 24/16 */
+  --ancho_maximo_404: 90rem;
+  /*1440/16*/
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  color: var(--color_primario); }
+  @media screen and (min-width: 37.5rem) {
+    :root {
+      --tamano_titulo: 4rem;
+      /*64/16*/
+      --interlineado_titulo: 5.93rem;
+      /*95/16*/ } }
+  @media screen and (min-width: 37.5rem) {
+    :root {
+      --tamano_parrafo: 1.5rem;
+      /*24/16*/
+      --interlineado_parrafo: 2.25rem;
+      /*36/16*/ } }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: inherit;
+  color: inherit; }
+
 body {
-  background: var(--color_secundario_blanco); }
+  background: var(--color_secundario_blanco);
+  animation: aparce_sitio 1s 0s ease-out; }
 
 u {
   list-style: none; }
@@ -95,21 +100,17 @@ img {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: bold;
-  font-size: var(--tamano_titulo_movil);
-  line-height: var(--interlineado_titulo_movil);
+  font-size: var(--tamano_titulo);
+  line-height: var(--interlineado_titulo);
   letter-spacing: -0.035em;
   color: var(--color_primario); }
-  @media screen and (min-width: 37.5rem) {
-    .titulo {
-      font-size: var(--tamano_titulo_escritorio);
-      line-height: var(--interlineado_titulo_escritorio); } }
 
 .titulo_2 {
   font-family: "Inconsolata";
   font-style: normal;
   font-weight: bold;
-  font-size: var(--tamano_titulo_2_movil);
-  line-height: var(--interlineado_titulo_2_movil);
+  font-size: var(--tamano_titulo_2);
+  line-height: var(--interlineado_titulo_2);
   letter-spacing: -0.08rem;
   text-transform: uppercase;
   color: var(--color_primario); }
@@ -118,21 +119,17 @@ img {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: normal;
-  font-size: var(--tamano_parrafo_movil);
-  line-height: var(--interlineado_parrafo_movil);
+  font-size: var(--tamano_parrafo);
+  line-height: var(--interlineado_parrafo);
   letter-spacing: -0.035em;
   color: var(--color_primario_claro); }
-  @media screen and (min-width: 37.5rem) {
-    .parrafo {
-      font-size: var(--taamano_parrafo_escritorio);
-      line-height: var(--interlineado_parrafo_escritorio); } }
 
 .normal {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: bold;
-  font-size: var(--tamano_normal_movil);
-  line-height: var(--interlineado_normal_movil);
+  font-size: var(--tamano_normal);
+  line-height: var(--interlineado_normal);
   letter-spacing: -0.035em;
   text-transform: uppercase;
   color: var(--color_secundario_blanco); }
@@ -141,8 +138,8 @@ img {
   font-family: "Montserrat" sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: var(--tamano_normal_movil);
-  line-height: var(--interlineado_enlace_movil);
+  font-size: var(--tamano_normal);
+  line-height: var(--interlineado_enlace);
   text-align: center;
   color: var(--color_secundario_gris); }
 
@@ -153,7 +150,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: var(--tamano_normal);
-  line-height: var(--interlineado_boton_movil);
+  line-height: var(--interlineado_boton);
   letter-spacing: -0.035em;
   text-transform: uppercase;
   color: var(--color_secundario_blanco);
@@ -164,9 +161,6 @@ img {
   transition: box-shadow 0.2 0.5s linear 0s; }
   .boton:active {
     box-shadow: 0px 0px 16px var(--color_secundario_oscuro); }
-
-.cabecera {
-  width: 100%; }
 
 .tarjeta {
   width: 100%;
@@ -242,8 +236,7 @@ img {
       /* 381/586 */ } }
 
 .pag_404 {
-  width: 100%;
-  max-width: var(--ancho_maximo_404);
   margin: 0 auto;
   padding: var(--relleno_404);
-  animation: aparce_sitio 1s 0s ease-out; }
+  width: 100%;
+  max-width: var(--ancho_maximo_404); }

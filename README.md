@@ -19,7 +19,11 @@
 </nav>
 <section >
     <section>
-        <h2 > Descripciòn General </h2>
+        <h2 > Descripción General </h2>
+        <p>
+        Para la presente solución decidi utilizar un preprocesaro de css llamado sass lo cual me ayuda a tener un diseño modular y siguiendo
+        un patron o arquitectura llamada 7-1, que consta de 7 carpetas y un archivo main.scss.
+        </p>
     </section>
     <section >
          <img align="center"  width="100%" heigth="50vh" src="./src/img/capturas/escritorio.png" alt="figura del sitio web en version escritorio">
@@ -29,7 +33,7 @@
 
 </section>
     <section >
-    <h2> Soluciòn </h2>
+    <h2> Solución </h2>
     <nav>
         <ul align="center">
             <h3>

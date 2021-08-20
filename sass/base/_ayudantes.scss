@@ -2,80 +2,48 @@
   font-family: "Space Mono";
   font-style: normal;
   font-weight: bold;
-  font-size: var(--tamano_titulo_movil);
-  line-height: var(--interlineado_titulo_movil);
+  font-size: var(--tamano_titulo);
+  line-height: var(--interlineado_titulo);
   letter-spacing: -0.035em;
   color: var(--color_primario);
-  @media screen and(min-width:37.5rem) {
-    & {
-      font-size: var(--tamano_titulo_escritorio);
-      line-height: var(--interlineado_titulo_escritorio);
-    }
-  }
 }
 .titulo_2 {
   font-family: "Inconsolata";
   font-style: normal;
   font-weight: bold;
-  font-size: var(--tamano_titulo_2_movil);
-  line-height: var(--interlineado_titulo_2_movil);
+  font-size: var(--tamano_titulo_2);
+  line-height: var(--interlineado_titulo_2);
   letter-spacing: -0.08rem;
   text-transform: uppercase;
   color: var(--color_primario);
-  @media screen and(min-width:37.5rem) {
-    & {
-      //font-size: 1.5rem;
-      //line-height: 2.25rem;
-    }
-  }
 }
 .parrafo {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: normal;
-  font-size: var(--tamano_parrafo_movil);
-  line-height: var(--interlineado_parrafo_movil);
+  font-size: var(--tamano_parrafo);
+  line-height: var(--interlineado_parrafo);
   letter-spacing: -0.035em;
   color: var(--color_primario_claro);
-
-  @media screen and(min-width:37.5rem) {
-    & {
-      font-size: var(--taamano_parrafo_escritorio);
-      line-height: var(--interlineado_parrafo_escritorio);
-    }
-  }
 }
 .normal {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: bold;
-  font-size: var(--tamano_normal_movil);
-  line-height: var(--interlineado_normal_movil);
+  font-size: var(--tamano_normal);
+  line-height: var(--interlineado_normal);
   letter-spacing: -0.035em;
   text-transform: uppercase;
   color: var(--color_secundario_blanco);
-  @media screen and(min-width:37.5rem) {
-    & {
-      //font-size: 1.5rem;
-      //line-height: 2.25rem;
-    }
-  }
 }
 .enlace {
   font-family: "Montserrat" sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: var(--tamano_normal_movil);
-  line-height: var(--interlineado_enlace_movil);
+  font-size: var(--tamano_normal);
+  line-height: var(--interlineado_enlace);
   text-align: center;
   color: var(--color_secundario_gris);
-
-  @media screen and(min-width:37.5rem) {
-    & {
-      //font-size: 1.5rem;
-      //line-height: 2.25rem;
-    }
-  }
 }
 .boton {
   padding: 1.43rem 2.68rem; /* 23/16 , 43/16 */
@@ -83,7 +51,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: var(--tamano_normal);
-  line-height: var(--interlineado_boton_movil);
+  line-height: var(--interlineado_boton);
   letter-spacing: -0.035em;
   text-transform: uppercase;
   color: var(--color_secundario_blanco);

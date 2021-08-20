@@ -1,7 +1,6 @@
 .pag_404 {
-  width: 100%;
-  max-width: var(--ancho_maximo_404);
   margin: 0 auto;
   padding: var(--relleno_404);
-  animation: aparce_sitio 1s 0s ease-out;
+  width: 100%;
+  max-width: var(--ancho_maximo_404);
 }
