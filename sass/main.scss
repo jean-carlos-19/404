@@ -4,8 +4,8 @@
 
 //@import "proveedores/";
 
-@import "base/fuentes","base/animaciones","base/normalizar", "base/base",
-  "base/ayudantes";
+@import "base/fuentes", "base/animaciones", "base/normalizar", "base/base",
+  "base/ayudantes/app.scss", "base/elemento";
 
 @import "diseño/tarjeta", "diseño/pie_pagina";
 

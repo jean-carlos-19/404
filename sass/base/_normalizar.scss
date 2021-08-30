@@ -7,23 +7,19 @@
   @include colores();
   @include titulo();
   @include titulo_2();
-  @include parrafo();
   @include normal();
-  @include enlace();
-  @include boton();
+  @include normal_pequeno();
   @include relleno();
   @include anchos();
 
-  font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
-  color: var(--color_primario);
 }
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  font-family: inherit;
   box-sizing: inherit;
-  color: inherit;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color_primario);
 }

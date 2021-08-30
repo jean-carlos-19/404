@@ -1,0 +1,26 @@
+.titulo {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--tamano_titulo);
+  line-height: var(--interlineado_titulo);
+  letter-spacing: -0.035em;
+  color: var(--color_primario);
+}
+.titulo_2 {
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--tamano_titulo_2);
+  line-height: var(--interlineado_titulo_2);
+  letter-spacing: -0.08rem;
+  text-transform: uppercase;
+  color: var(--color_primario);
+}
+.parrafo {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+  color: var(--color_primario_claro);
+}

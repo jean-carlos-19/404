@@ -1,9 +1,7 @@
 .pie_pagina {
   margin-top: 7.12rem; /* (114/16) */
-  .normal_pie_pagina {
-    font-weight: normal;
+  .parrafo_pie_pagina {
     text-align: center;
-    text-transform: none;
     color: var(--color_secundario_gris);
     .enlace_pie_pagina {
       font-weight: bold;
@@ -14,6 +12,6 @@
 }
 @media screen and(min-width:60rem) {
   .pie_pagina {
-    margin-top: 28.51vh; /* (308/1080) *100*/
+    margin-top: 18.75rem; /* (300/16) */
   }
 }
