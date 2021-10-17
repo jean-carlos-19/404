@@ -5,12 +5,12 @@
 //@import "proveedores/";
 
 @import "base/fuentes", "base/animaciones", "base/normalizar", "base/base",
-  "base/ayudantes/app.scss", "base/elemento";
+  "base/ayudantes/app.scss";
 
 @import "diseño/tarjeta", "diseño/pie_pagina";
 
 @import "componentes/figura", "componentes/bienvenido";
 
-@import "paginas/404";
+@import "paginas/home";
 
 //@import "temas/";

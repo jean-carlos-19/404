@@ -1,49 +1,19 @@
-@mixin colores() {
-  //colores
-  --color_primario: #333333;
-  --color_primario_claro: #4f4f4f;
-  --color_secundario_gris: #bdbdbd;
-  --color_secundario_enlace: #0984e3;
-  --color_secundario_blanco: #ffffff;
-  --color_secundario_oscuro: #636e72;
-}
+//TITULO 1
+$tamano_titulo_1_movil: 3rem; /*48/16*/
+$interlineado_titulo_1_movil: 4.43rem; /*71/16*/
+$tamano_titulo_1_escritorio: 4rem; /*64/16*/
+$interlineado_titulo_1_escritorio: 5.93rem; /*95/16*/
 
-@mixin titulo {
-  --tamano_titulo: 3rem; /*48/16*/
-  --interlineado_titulo: 4.43rem; /*71/16*/
-  @media screen and(min-width:37.5rem) {
-    --tamano_titulo: 4rem; /*64/16*/
-    --interlineado_titulo: 5.93rem; /*95/16*/
-  }
-}
+//TITULO 2
+$tamano_titulo_2_movil: 1.5rem; /*24/16*/
+$interlineado_titulo_2_movil: 1.56rem; /*25/16*/
 
-@mixin titulo_2 {
-  --tamano_titulo_2: 1.5rem; /*24/16*/
-  --interlineado_titulo_2: 1.56rem; /*25/16*/
-  @media screen and(min-width:37.5rem) {
-  }
-}
+//NORNAL
+$tamano_normal_movil: 1.12rem; /*18/16*/
+$interlineado_normal_movil: 1.68rem; /*27/16*/
+$tamano_normal_escritorio: 1.5rem; /*24/16*/
+$interlineado_normal_escritorio: 2.25rem; /*36/16*/
 
-@mixin normal {
-  --tamano_normal: 1.12rem; /*18/16*/
-  --interlineado_normal: 1.68rem; /*27/16*/
-  @media screen and(min-width:37.5rem) {
-    --tamano_normal: 1.5rem; /*24/16*/
-    --interlineado_normal: 2.25rem; /*36/16*/
-  }
-}
-
-@mixin normal_pequeno {
-  --tamano_normal_pequeno: 0.87rem; /* 14/16 */
-  --interlineado_normal_pequeno: 1.31rem; /* 21/16 */
-}
-
-@mixin relleno() {
-  //rellenos
-  --relleno_404: 1.25rem 1.5rem; /* 20/16 , 24/16 */
-}
-
-@mixin anchos {
-  //anchos
-  --ancho_maximo_404: 90rem; /*1440/16*/
-}
+//PEQUENO
+$tamano_pequeno_movil: 0.87rem; /* 14/16 */
+$interlineado_pequeno_movil: 1.31rem; /* 21/16 */
