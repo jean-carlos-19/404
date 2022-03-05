@@ -5,9 +5,11 @@ _Reto: Crear una página 404 no encontrada siguiendo el diseño propuesto por [D
 ### Historias de Usuario
 - _Puedo ver una página que sigue el diseño dado creada en [figma](https://www.figma.com/file/QeKWLNhB13zDjJzqR22TKE) ._
 
-### Previsualización
+### Previsualización 
 ![imagen](https://github.com/jean-carlos-19/404/blob/master/capturas/escritorio.png)
 
+### Demo
+_Puedes encontrar la implementacion del desafio [aqui](https://jc-404-not-found.onrender.com/)_
 
 ### Pre-requisitos 📋
 
