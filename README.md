@@ -57,9 +57,9 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 _Las herramientas utilizadas en este desafio fueron las siguientes:_
 
-* [Sass](http://www.dropwizard.io/1.0.2/docs/) - Es un preprocesador de css utilizando el patron 7 - 1.
-* [Prettier](https://maven.apache.org/) - Usado para dar formato al codigo dependiendo de la tecnologia usada.
-* [html](https://rometools.github.io/rome/) - Usado para crear el esqueleto de una pagina web.
+* [Sass](https://sass-lang.com/guide) - Es un preprocesador de css utilizando el patron 7 - 1.
+* [Prettier](https://prettier.io/docs/en/index.html) - Usado para dar formato al codigo dependiendo de la tecnologia usada.
+* [html](https://developer.mozilla.org/es/docs/Web/HTML/Reference) - Usado para crear el esqueleto de una pagina web.
 
 
 ## Autores ✒️
