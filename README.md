@@ -37,7 +37,7 @@ $git clone https://github.com/jean-carlos-19/404
 $ cd 404
 
 #3. Instala las dependencias.
-$ yarn installl o  yarn -i
+$ yarn install o  yarn -i
 
 #3. Dar formato al codigo 
 $yarn prettier
