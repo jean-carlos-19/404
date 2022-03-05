@@ -6,12 +6,12 @@ _Reto: Crear una página 404 no encontrada siguiendo el diseño propuesto por [D
 - _Puedo ver una página que sigue el diseño dado creada en [figma](https://www.figma.com/file/QeKWLNhB13zDjJzqR22TKE) ._
 
 ### Previsualización
-![imagen]("./capturas/escritorio.png")
+![imagen](https://github.com/jean-carlos-19/404/blob/master/capturas/escritorio.png)
 
 
 ### Pre-requisitos 📋
 
-_Para el correcto funcionamiento del proyecto de desafios se necesita tener inatalado typescript ya sea de manera local o global_
+_Para el correcto funcionamiento del proyecto de desafios se necesita tener instalado las siguientes dependencia sea de manera local o global_
 
 ```bash
 yarn add global node-sass
@@ -37,7 +37,13 @@ $ cd 404
 #3. Instala las dependencias.
 $ yarn installl o  yarn -i
 
-#3. Corre el ambiente local.
+#3. Dar formato al codigo 
+$yarn prettier
+
+#4. Generar el codigo css mediante Scss 
+$yarn scss
+
+#5. Corre el ambiente local.
 $ yarn start
 ```
 
