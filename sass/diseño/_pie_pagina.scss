@@ -2,12 +2,14 @@
   margin-top: 7.12rem; /* (114/16) */
   padding-bottom: 1.5rem;
   .parrafo_pie_pagina {
+    font-weight: bold;
     text-align: center;
-    color: var(--color_secundario_gris);
+    color: var(--color_primario_200);
     .enlace_pie_pagina {
-      font-weight: bold;
+      text-decoration: underline;
       text-transform: inherit;
       color: inherit;
+      font-weight: inherit;
     }
   }
 }

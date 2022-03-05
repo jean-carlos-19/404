@@ -1,12 +1,15 @@
 {
   "name": "404",
   "version": "1.0.0",
-  "main": "App.j",
-  "author": "Jean Carlos Piguave Alvarado <piguavejc@gmail.com>",
-  "description": "",
+  "main": "App.js",
+  "author": {
+    "name": "Jean Carlos Piguave Alvarado",
+    "email": "piguavejc@gmail.com",
+    "url": "https://devchallenges.io/portfolio/jean-carlos-19"
+  },
   "license": "MIT",
   "scripts": {
-    "sass": "node-sass -w sass -o src/css",
+    "sass": "node-sass -w sass -o src/css --output-style compressed",
     "prettier": "prettier --write ./*"
   }
 }

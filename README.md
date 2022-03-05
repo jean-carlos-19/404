@@ -1,91 +1,70 @@
-<main>
-<section>
-    <h1 align="center"> Page 404 Not Found </h1>
-</section>
- <section>
-    <h3 align="center"> Solución para un desafío de <a href="https://devchallenges.io/">Devchallenges.io</a> </h3>
+# Pagina 404 
 
-<section align="left">
-     <h2> Tabla de Contenido </h2>
-</section>
-<nav>
-    <ul>
-        <li><a href="https://github.com/jean-carlos-19/404/blob/master/README.md#-descripci%C3%B2n-general-">Descripciòn General</a></li>
-        <li><a href="https://github.com/jean-carlos-19/404/blob/master/README.md#-soluci%C3%B2n-">Soluciòn</a></li>
-        <li><a href="https://github.com/jean-carlos-19/404/#-construido-con-">Construido Con</a></li>
-        <li><a href="https://github.com/jean-carlos-19/404/#-caracteristicas-">Caracteristicas</a></li>
-        <li><a href="https://github.com/jean-carlos-19/404/#-contacto-">Contacto</a></li>    
-    </ul>
-</nav>
-<section >
-    <section>
-        <h2 > Descripción General </h2>
-        <p>
-        Para la presente solución decidi utilizar un preprocesaro de css llamado sass lo cual me ayuda a tener un diseño modular y siguiendo
-        un patron o arquitectura llamada 7-1, que consta de 7 carpetas y un archivo main.scss.
-        </p>
-    </section>
-    <section >
-         <img align="center"  width="100%" heigth="50vh" src="./src/img/capturas/escritorio.png" alt="figura del sitio web en version escritorio">
-    <section>
-   
-</section>
+_Reto: Crear una página 404 no encontrada siguiendo el diseño propuesto por [DevChallenges](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY). La página debe ser responsiva. No se debe mirar la solución existente. Cumpla con las historias de usuario que aparecen a continuación:_
 
-</section>
-    <section >
-    <h2> Solución </h2>
-    <nav>
-        <ul align="center">
-            <h3>
-                <a href="https://jc-404-not-found.onrender.com/">Demo</a><span> | </span>
-                <a href="https://github.com/jean-carlos-19/404">Github </a><span> | </span>
-                <a href="https://devchallenges.io/solutions/jgfUUBEmeJBDfeRDMcZX">Devchallenge</a> </a><span> | </span>
-                <a href="https://www.figma.com/proto/QeKWLNhB13zDjJzqR22TKE/404-page-challenge?node-id=1%3A56&scaling=min-zoom&page-id=0%3A1">Figma<a>
-            </h3>
-        </ul>
-    </nav>
-</section>
+### Historias de Usuario
+- _Puedo ver una página que sigue el diseño dado creada en [figma](https://www.figma.com/file/QeKWLNhB13zDjJzqR22TKE) ._
 
-<section >
-    <section>
-        <h2> Construido Con </h2>
-    </section>
-    <nav>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>
-                Preprocesadores
-                <ul>
-                    <li>SASS</li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</section>
-<section >
-    <h2> Caracteristicas </h2>
-    <p>
-        Esta aplicación o sitio fue creada como una presentación a un desafío de <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>. El reto consistía en construir una aplicación para completar las historias de usuario dadas.
-    </p>
-     <p>
-         Desafío: Cree una página 404 no encontrada siguiendo el diseño. La página debe responder. No mire la solución existente. Cumplir con las historias de usuario a continuación:
-     </p>
-     <nav>.
-        <ul>
-            <li>Historia de usuario: puedo ver una página siguiendo el diseño dado</li> 
-        </ul>
-    </nav>
-</section>
-<section >
-     <section>
-        <h2> Contacto </h2>
-    </section>
-    <nav>
-        <ul>
-                <li>Github <a href="https://github.com/jean-carlos-19">@jean-carlos-19</a></li>
-                <li>Twitter <a href="https://twitter.com/PiguaveJean">@PiguaveJean</a></li>
-        </ul>
-</nav>
-</section>
-</main>
+### Previsualización
+![imagen]("./capturas/escritorio.png")
+
+
+### Pre-requisitos 📋
+
+_Para el correcto funcionamiento del proyecto de desafios se necesita tener inatalado typescript ya sea de manera local o global_
+
+```bash
+yarn add global node-sass
+yarn add global --exact prettier
+
+o
+
+yarn add node-sass
+yarn add --exact prettier
+```
+
+### Instalación 🔧
+
+_A continuación se muestran los pasos para correr el abiente de desarrollo local:_
+
+```bash
+# 1. Clona este respositorio.
+$git clone https://github.com/jean-carlos-19/404
+
+#2. Dirigete a la carpeta. 
+$ cd 404
+
+#3. Instala las dependencias.
+$ yarn installl o  yarn -i
+
+#3. Corre el ambiente local.
+$ yarn start
+```
+
+## Despliegue 📦
+
+_Agrega notas adicionales sobre como hacer deploy_
+
+## Construido con 🛠️
+
+_Las herramientas utilizadas en este desafio fueron las siguientes:_
+
+* [Sass](http://www.dropwizard.io/1.0.2/docs/) - Es un preprocesador de css utilizando el patron 7 - 1.
+* [Prettier](https://maven.apache.org/) - Usado para dar formato al codigo dependiendo de la tecnologia usada.
+* [html](https://rometools.github.io/rome/) - Usado para crear el esqueleto de una pagina web.
+
+
+## Autores ✒️
+
+* **Jean Piguave** - *Trabajo Inicial* - [piguavejc](https://github.com/villanuevand)
+* **DevChallenges** - *Diseño de la IU en Figma* - [DevChallenges](https://github.com/jean-carlos-19)
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (MIT).
+
+
+
+
+---
+⌨️ con ❤️ por [Jean Carlos](https://github.com/jean-carlos-19) 😊

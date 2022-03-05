@@ -1,5 +1,8 @@
-404-not-found-master
-node_modules/
+#Dependencias
+/node_modules
+
+#informacion de instalaciones fallidad de paquetes al instalar paquetes de yarn 
 yarn.lock
+
+#extension de visual studio code
 .vscode
-src/universidad.html

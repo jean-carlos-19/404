@@ -1,7 +1,8 @@
 .figura {
-  width: 30.22vmax; /* (286.838/949)*100 */
+  width: 50.22vmax; /* (286.838/949)*100 */
+  height: auto;    
   @include display_flex(row, center, center);
-  .imagen_figura {
+  .figura_imagen {
     animation: vueltas_espantapajaros 1s 0s ease-in infinite alternate;
   }
 }
@@ -10,6 +11,5 @@
 @media screen and (min-width: 60rem) {
   .figura {
     flex-basis: 37.44%; /* (539.22/1440)*100 */
-    height: auto;
   }
 }
