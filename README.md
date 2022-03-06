@@ -2,14 +2,14 @@
 
 _Reto: Crear una página 404 no encontrada siguiendo el diseño propuesto por [DevChallenges](https://www.figma.com/file/QeKWLNhB13zDjJzqR22TKE). La página debe ser responsiva. No se debe mirar la solución existente. Cumpla con las historias de usuario que aparecen a continuación:_
 
-### Historias de Usuario
+### Historias de Usuario :man:
 - _Puedo ver una página que sigue el diseño dado creada en [figma](https://www.figma.com/proto/QeKWLNhB13zDjJzqR22TKE/404-page-challenge?node-id=1%3A4&scaling=min-zoom&page-id=0%3A1)._
 - _Puedo ver una página en el móvil siguiendo el diseño dado creada en [figma](https://www.figma.com/proto/QeKWLNhB13zDjJzqR22TKE/404-page-challenge?node-id=1%3A56&scaling=min-zoom&page-id=0%3A1)._
 
-### Previsualización 
+### Previsualización  :eye:
 ![imagen](https://github.com/jean-carlos-19/404/blob/master/capturas/escritorio.png)
 
-### Demo
+### Demo :eyes:
 _Puedes encontrar la implementacion del desafio [aqui](https://jc-404-not-found.onrender.com/)._
 
 ### Pre-requisitos 📋
